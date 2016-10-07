@@ -1,4 +1,4 @@
-# [MySQL VS SQLite VS PostgreSQL][^1]
+# MySQL VS SQLite VS PostgreSQL[^1]
 
 This page try to compare the three main RDBMS SQLite SQLite, MySQL, PostgreSQL, firstly to know the advantage and disadvantage of each RDMS. Then base on this, it is easy to understand the scenario: when to use and when not to use.   
 
