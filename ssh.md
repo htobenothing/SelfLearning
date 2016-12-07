@@ -58,3 +58,5 @@ cat id_rsa.pub >> authorized_keys
 ## Refereneces:
 1. [SSH/OpenSSH/Keys](https://help.ubuntu.com/community/SSH/OpenSSH/Keys)
 2. [SSH Tutorial for Linux](https://support.suso.com/supki/SSH_Tutorial_for_Linux) 
+
+2016/12/7
