@@ -74,3 +74,7 @@ most advanced, SQL-compliant and objective-RDBMS
 
 
 [^1]: https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems
+
+
+29/12/2016
+
