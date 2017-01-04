@@ -1,60 +1,61 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:pstn="http://example.org/event/1.0/"
+         xmlns:event="http://example.org/event/1.0/"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         >
+         xmlns:rrOn="http://http://www.rolls-royce.com/ontology/"
+         xmlns:rrRule="http://http://www.rolls-royce.com/ontology/Rule">
 
-<pstn:result rdf:about="http://example.org/Events/result1.rdf">
-    <pstn:owner>Albert</pstn:owner>
-    <pstn:createDate>2016-07-08</pstn:createDate>
-    <pstn:location>c://data</pstn:location>
-    <pstn:comment>analysis for the Q1 event</pstn:comment>
+<event:result rdf:about="http://example.org/Events/result1.rdf">
+    <event:owner>Albert</event:owner>
+    <event:createDate>2016-07-08</event:createDate>
+    <event:location>c://data</event:location>
+    <event:comment>analysis for the Q1 event</event:comment>
 
-    <pstn:files>
+    <event:files>
     <rdf:Seq>
       <rdf:_1>
-        <pstn:file rdf:about="http://example.org/Events/test1.csv">
-            <pstn:fileName>test1.csv</pstn:fileName>
-            <pstn:reportDate>2017-05-06</pstn:reportDate>
-            <pstn:ESN>Trent 800</pstn:ESN>
+        <event:file rdf:about="http://example.org/Events/test1.csv">
+            <event:fileName>test1.csv</event:fileName>
+            <event:reportDate>2017-05-06</event:reportDate>
+            <event:ESN>Trent 800</event:ESN>
                 <rdf:Seq>
                     <rdf:_1>
-                        <pstn:statement rdf:nodeID="g1000" />
-                        <pstn:statement rdf:nodeID="g1001" />
-                        <pstn:statement rdf:nodeID="g1002" />
+                        <event:statement rdf:nodeID="g1000" />
+                        <event:statement rdf:nodeID="g1001" />
+                        <event:statement rdf:nodeID="g1002" />
                     </rdf:_1>
                 </rdf:Seq>
-        </pstn:file>
+        </event:file>
       </rdf:_1>
       <rdf:_2 rdf:resource="http://example.org/Events/test1.csv"/>
       <rdf:_3 rdf:resource="http://example.org/Events/test2.csv" />
     </rdf:Seq> 
-    </pstn:files>
-</pstn:result>
+    </event:files>
+</event:result>
 <rdf:Description rdf:nodeID="g1000" >
-  <rdf:subject rdf:resource="http://example.org/event/1.0/blade" />
-  <rdf:predicate rdf:resource="http://example.org/event/1.0/has_dept" />
-  <rdf:object rdf:resource="http://example.org/event/1.0/crack"/>
+  <rdf:subject rdf:resource="http://http://www.rolls-royce.com/ontology/blade" />
+  <rdf:predicate rdf:resource="http://http://www.rolls-royce.com/ontology/Rule/has_dept" />
+  <rdf:object rdf:resource="http://http://www.rolls-royce.com/ontology/crack"/>
 </rdf:Description>
 
 <rdf:Description rdf:nodeID="g1001" >
-  <rdf:subject rdf:resource="http://example.org/event/1.0/fan" />
-  <rdf:predicate rdf:resource="http://example.org/event/1.0/has_dept" />
-  <rdf:object rdf:resource="http://example.org/event/1.0/crack"/>
+  <rdf:subject rdf:resource="http://http://www.rolls-royce.com/ontology/fan" />
+  <rdf:predicate rdf:resource="http://http://www.rolls-royce.com/ontology/Rule/has_dept" />
+  <rdf:object rdf:resource="http://http://www.rolls-royce.com/ontology/crack"/>
 </rdf:Description>
 
 
 <rdf:Description rdf:nodeID="g1002" >
-  <rdf:subject rdf:resource="http://example.org/event/1.0/blade" />
-  <rdf:predicate rdf:resource="http://example.org/event/1.0/is_part_of" />
-  <rdf:object rdf:resource="http://example.org/event/1.0/crack"/>
+  <rdf:subject rdf:resource="http://http://www.rolls-royce.com/ontology/blade" />
+  <rdf:predicate rdf:resource="http://http://www.rolls-royce.com/ontology/Rule/is_part_of" />
+  <rdf:object rdf:resource="http://http://www.rolls-royce.com/ontology/crack"/>
 </rdf:Description>
 
-<rdfs:Class rdf:about="http://example.org/event/1.0/blade">
-  <rdfs:subClassOf rdf:resource="http://example.org/event/1.0/fan" />
+<rdfs:Class rdf:about="http://http://www.rolls-royce.com/ontology/blade">
+  <rdfs:subClassOf rdf:resource="http://http://www.rolls-royce.com/ontology/fan" />
   
 </rdfs:Class>
-<rdfs:Class rdf:about="http://example.org/event/1.0/fan">
+<rdfs:Class rdf:about="http://http://www.rolls-royce.com/ontology/fan">
 </rdfs:Class>
 
 
